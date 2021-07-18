@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    line-height: 1.2em;
+}
+h1{
+    font-size: 36px;
+}
+header{
+    background: url('/images/header-bg.jpg');
+    background-size: cover;
+    height: 715px;
+}
+nav{
+    background: rgba(20, 2, 0, 0.8);
+    color:white;
+}
+.nav-custom{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#home h1{
+    font-size: 60px;
+}
+#home button{
+    padding-left:  40px;
+    padding-right:  40px;
+}
+.homeContent{
+    padding-top: 40px ;
+}
+#about h6{
+    color: #b68834; 
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+/* coffee section */
+#coffee{
+    background-image: url('/images/menu-bg.jpg');
+}
+.coffee-card{
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(182, 136, 52, 0.2);
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+
+/* review section */
+#review{
+    background-color: #b68834;
+    color: white;
+}
+
+/* footer */
+footer{
+    background-image: url('/images/footer-bg.jpg');
+    background-size:  cover;
+    color: white;
+    height: 530px;
+    padding: 240px 0;
+}
