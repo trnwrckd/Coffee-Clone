@@ -10,29 +10,47 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="css/style.css">
     <title>Coffee - Clone</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1cdbfbf181.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-light fixed-top nav-custom">
+        <nav class="navbar nav-custom navbar-expand-lg navbar-dark fixed-top d-flex flex-column">
+            <div class="display-none container justify-content-end">
+                <span class="header-info"> Mon-Fri: 8am to 2pm</span>
+                <span class="header-info"> Sat-Sun: 11am to 4pm</span>
+                <span class="header-info"> (012) 6985 236 7512 </span>
+            </div>
+            <!-- navbar -->
             <div class="container">
-                <a href="" class=" navbar-brand mt-4">
+                <a href="" class="navbar-brand">
                     <img class="img-fluid" src="images/mainLogo.png" alt="Main Logo">
                 </a>
-                <div class="d-flex flex-column">
-                    <div class="flex">
-                        <span class="header-info"> Mon-Fri: 8am to 2pm</span>
-                        <span class="header-info"> Sat-Sun: 11am to 4pm</span>
-                        <span class="header-info"> (012) 6985 236 7512 </span>
-                    </div>
-                    <div class="d-flex justify-content-between nav-links">
-                        <a href="">HOME</a>
-                        <a href="">ABOUT</a>
-                        <a href="">COFFEE</a>
-                        <a href="">REVIEW</a>
-                        <a href="">BLOG</a>
-                        <a href="">PAGES</a>
-                    </div>
+                <!-- navbar toggler button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+
+                <!-- items to show on hamburger -->
+                <div class="collapse navbar-collapse d-flex justify-content-end nav-links" id="navbarSupportedContent">
+                    <!-- <div class=""> -->
+                    <a href="">HOME</a>
+                    <a href="">ABOUT</a>
+                    <a href="">COFFEE</a>
+                    <a href="">REVIEW</a>
+                    <a href="">BLOG</a>
+                    <span class="dropdown">
+                        <a href="" class="dropdown dropdown-toggle" id="dropdownButton" data-bs-toggle="dropdown"
+                            aria-expanded="false">PAGES</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownButton">
+                            <li><a class="dropdown-item py-2" href="#">Generic</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Elements</a></li>
+                        </ul>
+                    </span>
+                    <!-- </div> -->
                 </div>
             </div>
         </nav>
@@ -41,20 +59,20 @@
                 <div>
                     <h6 class="text-white">NOW YOU CAN FEEL THE ENERGY</h6>
                     <h1 class="text-white"> Start your day with a black Coffee</h1>
-                    <button class="btn rounded-pill bg-light"> Buy Now</button>
+                    <button class="btn rounded-pill home-btn"> Buy Now</button>
                 </div>
             </div>
         </section>
     </header>
     <!-- about section -->
-    <section id="about" class="container d-flex justify-between section-gap">
+    <section id="about" class="container d-flex justify-between align-items-center section-gap">
         <div class="col-lg-7">
             <img class="img-fluid" src="images/vid-thumbnail.jpg" alt="">
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-4">
             <h6>LIVE COFFEE MAKING PROCESS</h6>
             <h1>We Telecast our Coffee Making Live</h1>
-            <p>We are here to listen from you deliver exellence</p>
+            <p style="font-weight: 400;" class="text-dark">We are here to listen from you deliver exellence</p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim.
@@ -69,155 +87,137 @@
             <p>Who are in extremely love with eco friendly system.</p>
         </div>
         <div class="container">
-            <div class="row gx-5">
+            <div class="row gx-4">
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between pb-3">
+                            <h4>Capuccino</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between pb-3">
+                            <h4>Americano</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between pb-3">
+                            <h4>Espresso</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between pb-3">
+                            <h4>Macchiato</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between  pb-3">
+                            <h4>Mocha</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between  pb-3">
+                            <h4>Coffee Latte</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between  pb-3">
+                            <h4>Piccolo Latte</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between  pb-3">
+                            <h4>Ristretto</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="coffee-card d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <span class="card-title">
-                                Capuccino
-                            </span>
-                            <span class="card-price">
+                    <div class="coffee-card d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between  pb-3">
+                            <h4>Afogatto</h4>
+                            <h4 class="card-price">
                                 $49
-                            </span>
+                            </h4>
                         </div>
                         <div>
-                            <p>
+                            <p class="m-0">
                                 Usage of the Internet is becoming more common due to rapid advance.
                             </p>
                         </div>
@@ -226,6 +226,7 @@
             </div>
         </div>
     </section>
+
     <!-- Gallery Section -->
     <section id="gallery" class="section-gap">
         <div class="container">
@@ -234,13 +235,13 @@
                 <p> Who are in extremely love with eco friendly system</p>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="d-flex flex-column">
-                    <img src="images/img-item-1.jpg" alt="" srcset="">
+                <div class="d-flex flex-column justify-content-between me-4">
+                    <img src="images/img-item-1.jpg" class="mb-4" alt="" srcset="">
                     <img src="images/img-item-3.jpg" alt="" srcset="">
                 </div>
                 <div class="d-flex flex-column">
                     <img src="images/img-item-2.jpg" alt="" srcset="">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between mt-4">
                         <img src="images/img-item-4.jpg" alt="" srcset="">
                         <img src="images/img-item-5.jpg" alt="" srcset="">
                     </div>
@@ -251,16 +252,22 @@
     <!-- review section -->
     <section id="review">
         <div class="container section-gap">
-            <div class="text-center">
-                <h1>What kind of coffee we serve for you</h1>
+            <div class="text-center pb-5">
+                <h1 class="text-light">What kind of Coffee we serve for you</h1>
                 <p> Who are in extremely love with eco friendly system</p>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-6">
                     <img src="images/logo-1.jpg" alt="">
-                    <div class="d-flex">
-                        <span class="review-title pe-5"> lorem ipsum</span>
-                        <span> stars</span>
+                    <div class="d-flex review-heading">
+                        <h4 class="text-white pe-5"> lorem ipsum</h4>
+                        <span>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </span>
                     </div>
                     <p>
                         Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -271,9 +278,15 @@
                 </div>
                 <div class="col-lg-6">
                     <img src="images/logo-2.jpg" alt="">
-                    <div class="d-flex">
-                        <span class="review-title pe-5"> lorem ipsum</span>
-                        <span> stars</span>
+                    <div class="d-flex review-heading">
+                        <h4 class="text-white pe-5"> lorem ipsum</h4>
+                        <span>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </span>
                     </div>
                     <p>
                         Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -283,21 +296,21 @@
                     </p>
                 </div>
             </div>
-            <div class="row gx-3">
+            <div class="row gx-3 review-stats">
                 <div class="col-lg-3">
-                    <h1>2536</h1>
-                    <p>Happy clients</p>
+                    <h1 class="stat-counter">2536</h1>
+                    <p>Happy Clients</p>
                 </div>
                 <div class="col-lg-3">
-                    <h1>7500</h1>
+                    <h1 class="stat-counter">7500</h1>
                     <p>Total Projects</p>
                 </div>
                 <div class="col-lg-3">
-                    <h1>2013</h1>
+                    <h1 class="stat-counter">2013</h1>
                     <p>Cups of Coffee</p>
                 </div>
                 <div class="col-lg-3">
-                    <h1>10500</h1>
+                    <h1 class="stat-counter">10500</h1>
                     <p>Total submitted</p>
                 </div>
             </div>
@@ -314,35 +327,35 @@
                 <div class="col-lg-6">
                     <div class="d-flex flex-column">
                         <img src="images/pre-footer-img-1.jpg" alt="" srcset="">
-                        <div class="d-flex">
-                            <button class="rounded-pill">
+                        <div class="d-flex py-4">
+                            <button class="btn-round me-1">
                                 Travel
                             </button>
-                            <button class="rounded-pill">
-                                Lifestyle
+                            <button class="btn-round">
+                                Life Style
                             </button>
                         </div>
                         <h5>Portable latest Fashion for Young women</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.</p>
-                        <span> 31st January, 2018</span>
+                        <span style="font-weight: 500;" class="text-dark"> 31st January, 2018</span>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="d-flex flex-column">
                         <img src="images/pre-footer-img-2.jpg" alt="" srcset="">
-                        <div class="d-flex">
-                            <button class="rounded-pill">
+                        <div class="d-flex py-4">
+                            <button class="btn-round me-1">
                                 Travel
                             </button>
-                            <button class="rounded-pill">
-                                Lifestyle
+                            <button class="btn-round">
+                                Life Style
                             </button>
                         </div>
                         <h5>Portable latest Fashion for Young women</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.</p>
-                        <span> 31st January, 2018</span>
+                        <span style="font-weight: 500;" class="text-dark"> 31st January, 2018</span>
                     </div>
                 </div>
             </div>
@@ -353,22 +366,32 @@
         <div class="container">
             <div class="row gx-5 footer-content">
                 <div class="col-lg-5">
-                    <h6> About Us</h6>
+                    <h6 class="text-light"> About Us</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore dolore magna aliqua. </p>
-                    <p>Copyright ©2021 All rights reserved | This template is made by trnwrckd </p>
+                    <p id="copyright">Copyright ©2021 All rights reserved | This template is cloned from <span
+                            class="gold-text">Colorlib</span> by <span class="gold-text">trnwrckd </span></p>
                 </div>
                 <div class="col-lg-5">
-                    <h6>Newsletter</h6>
-                    <p> stay updated with our latest</p>
-                    <input type="text" placeholder="Enter Email" id=""> <button>-></button>
+                    <h6 class="text-light">Newsletter</h6>
+                    <p> Stay updated with our latest</p>
+                    <div class="d-flex">
+                        <input type="text" class="form-control w-75" placeholder="Enter Email" id="">
+                        <a href="">
+                            <i class="fas fa-caret-square-right gold-text" style="font-size: 2.7rem;"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-2">
-                    <h6>Follow us</h6>
+                    <h6 class="text-light">Follow us</h6>
                     <p> Let us be social</p>
-                    <span> icons</span>
+                    <span class="social-icons d-flex justify-content-between">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""> <i class="fab fa-twitter"></i></a>
+                        <a href=""> <i class="fas fa-basketball-ball"></i></a>
+                        <a href=""> <i class="fab fa-behance"></i></a>
+                    </span>
                 </div>
-
             </div>
         </div>
     </footer>

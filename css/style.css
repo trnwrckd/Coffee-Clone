@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 body{
     margin-top: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    color: #777777;
+    font-weight: 300;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 600;
     line-height: 1.2em;
+    color: black;
 }
 h1{
     font-size: 36px;
+}
+h4{
+    font-size: 18px;
 }
 header{
     background: url('/images/header-bg.jpg');
     background-size: cover;
     height: 715px;
 }
-nav{
+footer h6{
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+nav,.dropdown-menu{
     background: rgba(20, 2, 0, 0.8);
     color:white;
 }
@@ -25,7 +35,6 @@ nav{
     padding-top: 14px;
     padding-bottom: 14px;
     height: 80px;
-    
 }
 .header-info{
     margin-right: 20px;
@@ -36,7 +45,18 @@ nav{
     padding: 0 8px;
     font-size: 12px;
 }
-
+.dropdown-menu{
+    background-color: rgba(20, 2, 0, 0.5);
+}
+.dropdown-menu>li>a{
+    color: white;
+    font-size: .8rem;
+    transition: 0.3s;
+}
+.dropdown-menu>li>a:hover{
+    color: #b68834;
+    background-color:white;
+}
 #home h1{
     font-size: 60px;
 }
@@ -46,6 +66,16 @@ nav{
 }
 .homeContent{
     padding-top: 80px;
+}
+.home-btn{
+    background-color: white;
+    font-weight: 500;
+    color: black;
+}
+.home-btn:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
 .section-gap{
     padding: 120px 0;
@@ -67,11 +97,36 @@ nav{
     padding: 30px 30px;
     margin-bottom: 30px;
 }
+.card-price{
+    color: #b68834;
+}
 
 /* review section */
 #review{
     background-color: #b68834;
     color: white;
+}
+.review-heading{
+    padding: 20px 0;
+}
+.review-stats{
+    margin-top: 100px;
+}
+.stat-counter{
+    font-weight: 100;
+    color: white;
+    font-size: 60px;
+}
+.btn-round{
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    font-size: 12px;
+    background-color: white;
+    font-weight: 500;
+}
+.btn-round:hover{
+    background-color: #b68834;
 }
 
 /* footer */
@@ -81,4 +136,16 @@ footer{
     color: white;
     height: 530px;
     padding: 240px 0;
+}
+#copyright{
+    padding: 20px 0;
+}
+.gold-text{
+    color: #b68834;
+}
+.social-icons a{
+    color: white;
+}
+.social-icons a:hover{
+    color: #b68834;
 }
