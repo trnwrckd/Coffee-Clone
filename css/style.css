@@ -3,6 +3,7 @@
 body{
     margin-top: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 600;
@@ -23,11 +24,17 @@ nav{
 .nav-custom{
     padding-top: 14px;
     padding-bottom: 14px;
+    height: 80px;
     
 }
-nav a{
+.header-info{
+    margin-right: 20px;
+}
+.nav-links a{
     text-decoration: none;
     color: white;
+    padding: 0 8px;
+    font-size: 12px;
 }
 
 #home h1{
@@ -38,7 +45,10 @@ nav a{
     padding-right:  40px;
 }
 .homeContent{
-    padding-top: 40px ;
+    padding-top: 80px;
+}
+.section-gap{
+    padding: 120px 0;
 }
 #about h6{
     color: #b68834; 
