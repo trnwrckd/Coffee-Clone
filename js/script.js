@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     navScrolled();
+    counter();
     setModalSrc();
 });
 
@@ -28,4 +29,40 @@ setModalSrc = () => {
         video.setAttribute("src", url);
         console.log("shown");
     });
+}
+counter = () => {
+    var stats = document.getElementById("review-stats");
+    let options = {
+        root: document.getElementById("review"),
+        rootMargin: '0px',
+        threshold: 1
+    }
+    let observer = new IntersectionObserver(counterCallback, options);
+    observer.observe(stats);
+}
+
+counterCallback = () => {
+    var item1 = document.getElementsByClassName("stat-counter")[0];
+    var item2 = document.getElementsByClassName("stat-counter")[1];
+    var item3 = document.getElementsByClassName("stat-counter")[2];
+    var item4 = document.getElementsByClassName("stat-counter")[3];
+    animateValue(item1, 2536);
+    animateValue(item2, 7321);
+    animateValue(item3, 2013);
+    animateValue(item4, 10017);
+}
+
+function animateValue(item, limit) {
+    let startTimestamp = null;
+    let i = 0;
+    const step = (timestamp) => {
+        console.log("inside step");
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / 1200, 1);
+        item.innerHTML = Math.floor(progress * (limit - i) + i);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
 }
