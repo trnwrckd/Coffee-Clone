@@ -22,7 +22,7 @@ h4{
     font-size: 18px;
 }
 header{
-    background: url('/images/header-bg.jpg');
+    background: url('../images//header-bg.jpg');
     background-size: cover;
     height: 715px;
 }
@@ -108,7 +108,9 @@ nav{
 }
 /* coffee section */
 #coffee{
-    background-image: url('/images/menu-bg.jpg');
+    background-image: url('../images/menu-bg.jpg');
+    background-color: #fde76c86;
+    background-blend-mode:overlay;
 }
 .coffee-card{
     background-color: #fff;
@@ -151,7 +153,7 @@ nav{
 
 /* footer */
 footer{
-    background-image: url('/images/footer-bg.jpg');
+    background-image: url('../images/footer-bg.jpg');
     background-size:  cover;
     color: white;
     /* height: 530px; */

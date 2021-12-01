@@ -35,13 +35,14 @@ counter = () => {
     let options = {
         root: document.getElementById("review"),
         rootMargin: '0px',
-        threshold: 1
+        threshold: 0.25
     }
     let observer = new IntersectionObserver(counterCallback, options);
     observer.observe(stats);
 }
 
 counterCallback = () => {
+    console.log("called counter");
     var item1 = document.getElementsByClassName("stat-counter")[0];
     var item2 = document.getElementsByClassName("stat-counter")[1];
     var item3 = document.getElementsByClassName("stat-counter")[2];
@@ -56,7 +57,7 @@ function animateValue(item, limit) {
     let startTimestamp = null;
     let i = 0;
     const step = (timestamp) => {
-        console.log("inside step");
+        // console.log("inside step");
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / 1200, 1);
         item.innerHTML = Math.floor(progress * (limit - i) + i);
